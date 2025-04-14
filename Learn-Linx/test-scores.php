@@ -149,7 +149,7 @@ function downloadPDF() {
     });
 }
 </script>
-
+<br>
 <!-- Bookmark to go the top -->     
 <a href="#top">Go to the top</a>
 </body>
