@@ -41,16 +41,15 @@ if (isset($_POST['but_logout'])) {
 </head>
 <body>
     
-    <!-- Navigation Bar -->
-    <div class="navigationbar">
-	<img src="logo.png" alt="Learn Linx Logo">
-        <ul>
-			<li><a href="dashboard.php" target ="_self">Home</a></li>
-            <li><a href="Video.html" target = "_self" >Courses</a></li>
-			<li><a href="test-scores.php">Test Scores</a></li>
-			<li><a href= "mailto:MarleneHabib@LearnLinx.com, VardhanJalluri@LearnLinx.com, HimashailiDonavalli@LearnLinx.com, ShreejiPatel@LearnLinx.com, KevinPatel@LearnLinx.com" target="_blank" >Support</a></li>
-        </ul>
-    </div>
+<div class="navigationbar">
+    <img src="logo.png" alt="Learn Linx Logo">
+    <ul>
+        <li><a href="dashboard.php">Home</a></li>
+        <li><a href="Video.html">Courses</a></li>
+        <li><a href="test-scores.php">Test Scores</a></li>
+        <li><a href="support.php">Support</a></li>
+    </ul>
+</div>
     
 	<br>
 	

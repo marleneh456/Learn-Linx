@@ -75,17 +75,15 @@ $result = $stmt->get_result();
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <div class="navigationbar">
     <img src="logo.png" alt="Learn Linx Logo">
     <ul>
         <li><a href="dashboard.php">Home</a></li>
         <li><a href="Video.html">Courses</a></li>
         <li><a href="test-scores.php">Test Scores</a></li>
-        <li><a href="mailto:MarleneHabib@LearnLinx.com">Support</a></li>
+        <li><a href="support.php">Support</a></li>
     </ul>
 </div>
-
 <h1>Your Test Score History</h1>
 
 <?php if ($result->num_rows > 0): ?>
