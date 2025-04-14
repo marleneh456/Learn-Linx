@@ -37,7 +37,7 @@ $result = $stmt->get_result();
     <style>
         body {
             font-family: Arial;
-            background: #9370DB; /* Purple background */
+            background: #40367c; /* Purple background */
             color: white;
             text-align: center;
         }
@@ -56,11 +56,25 @@ $result = $stmt->get_result();
             padding: 10px;
         }
         th {
-            background-color: #0d47a1;
+            background-color: #6b2390;
             color: white;
         }
-        .pdf-button, .delete-button {
-            background-color: #0d47a1;
+        .pdf-button{
+            background-color: #2d5986;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 4px;
+        }
+
+        .pdf-button:hover {
+            background-color:rgb(62, 134, 205);
+        }
+
+        .delete-button {
+            background-color: #b22222;
             color: white;
             padding: 8px 15px;
             border: none;
@@ -69,7 +83,7 @@ $result = $stmt->get_result();
             margin: 4px;
         }
         .delete-button:hover {
-            background-color: #b22222;
+            background-color:rgb(211, 65, 65);
         }
     </style>
 </head>

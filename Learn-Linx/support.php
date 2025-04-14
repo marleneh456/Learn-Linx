@@ -1,18 +1,13 @@
 <?php
 session_start();
-
-// Redirect if not logged in
-if (!isset($_SESSION['name'])) {
-    header("Location: index.php");
-    exit;
-}
+$name = isset($_SESSION['name']) ? $_SESSION['name'] : null;
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Support - Learn Linx</title>
-    <link rel="stylesheet" href="Home.css">
+    <link href="Home.css" type="text/css" rel ="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <style>
         .support-container {
@@ -36,16 +31,26 @@ if (!isset($_SESSION['name'])) {
 <div class="navigationbar">
     <img src="logo.png" alt="Learn Linx Logo">
     <ul>
+    <?php if (isset($_SESSION['name'])): ?>
         <li><a href="dashboard.php">Home</a></li>
         <li><a href="Video.html">Courses</a></li>
         <li><a href="test-scores.php">Test Scores</a></li>
         <li><a href="support.php">Support</a></li>
-    </ul>
+    <?php else: ?>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="support.php">Support</a></li>
+        <li><a href="index.php">Login/Signup</a></li>
+    <?php endif; ?>
+</ul>
+
 </div>
 
 <!-- Main Content -->
 <div class="support-container">
     <h1>Support Contacts</h1>
+    <?php if ($name): ?>
+        <p>Welcome, <strong><?php echo htmlspecialchars($name); ?></strong>!</p>
+    <?php endif; ?>
     <p>If you need help or have questions, you can contact any of the team members below:</p>
 
     <ul class="support-list">
