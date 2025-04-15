@@ -93,7 +93,9 @@ $result = $stmt->get_result();
 <body>
 
 <div class="navigationbar">
-    <img src="logo.png" alt="Learn Linx Logo">
+        <a href="dashboard.php">
+            <img src="logo.png" alt="Learn Linx Logo">
+        </a>
     <ul>
         <li><a href="dashboard.php">Home</a></li>
         <li><a href="Video.html">Courses</a></li>
@@ -101,6 +103,7 @@ $result = $stmt->get_result();
         <li><a href="support.php">Support</a></li>
     </ul>
 </div>
+
 <h1>Your Test Score History</h1>
 
 <?php if ($result->num_rows > 0): ?>

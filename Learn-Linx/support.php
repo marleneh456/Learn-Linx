@@ -29,7 +29,9 @@ $name = isset($_SESSION['name']) ? $_SESSION['name'] : null;
 
 <!-- Navigation Bar -->
 <div class="navigationbar">
-    <img src="logo.png" alt="Learn Linx Logo">
+    <a href="<?php echo isset($_SESSION['name']) ? 'dashboard.php' : 'Home.html'; ?>">
+        <img src="logo.png" alt="Learn Linx Logo">
+    </a>
     <ul>
     <?php if (isset($_SESSION['name'])): ?>
         <li><a href="dashboard.php">Home</a></li>
@@ -41,9 +43,9 @@ $name = isset($_SESSION['name']) ? $_SESSION['name'] : null;
         <li><a href="support.php">Support</a></li>
         <li><a href="index.php">Login/Signup</a></li>
     <?php endif; ?>
-</ul>
-
+    </ul>
 </div>
+
 
 <!-- Main Content -->
 <div class="support-container">

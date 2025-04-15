@@ -41,7 +41,9 @@ if (isset($_POST['but_logout'])) {
 <body>
     
 <div class="navigationbar">
-    <img src="logo.png" alt="Learn Linx Logo">
+        <a href="dashboard.php">
+            <img src="logo.png" alt="Learn Linx Logo">
+        </a>
     <ul>
         <li><a href="dashboard.php">Home</a></li>
         <li><a href="Video.html">Courses</a></li>
