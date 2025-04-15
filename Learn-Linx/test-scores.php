@@ -37,7 +37,7 @@ $result = $stmt->get_result();
     <style>
         body {
             font-family: Arial;
-            background: #40367c; /* Purple background */
+            background:rgb(90, 76, 173); /* Purple background */
             color: white;
             text-align: center;
         }
@@ -67,6 +67,8 @@ $result = $stmt->get_result();
             cursor: pointer;
             font-size: 14px;
             margin: 4px;
+            border-radius: 10px;
+            transition: background-color 0.8s ease;
         }
 
         .pdf-button:hover {
@@ -81,6 +83,7 @@ $result = $stmt->get_result();
             cursor: pointer;
             font-size: 14px;
             margin: 4px;
+            transition: background-color 0.8s ease;
         }
         .delete-button:hover {
             background-color:rgb(211, 65, 65);

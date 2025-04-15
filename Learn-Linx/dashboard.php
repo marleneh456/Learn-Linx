@@ -37,7 +37,6 @@ if (isset($_POST['but_logout'])) {
     <title>Learn Linx Home page</title>
     <link href="Home.css" type="text/css" rel ="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-	<a id="top"></a>
 </head>
 <body>
     
@@ -73,13 +72,7 @@ if (isset($_POST['but_logout'])) {
 			<br>
 		<br>	
 	</div>
-		<p>
-		If you have any questions about this websites.
-		Feel Free to contact any one of us!
-		</p>
 </div>
-	<!-- Bookmark to go the top -->     
-<a href="#top">Go to the top</a>
 	
 </body>
 </html>
